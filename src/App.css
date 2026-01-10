@@ -59,6 +59,21 @@
   backdrop-filter: blur(14px);
 }
 
+.nav {
+  display: flex;
+  gap: 16px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.nav a {
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: var(--ink);
+}
+
 .brand {
   display: flex;
   align-items: center;
@@ -181,6 +196,77 @@
   animation-delay: 0.1s;
 }
 
+.content,
+.policy {
+  margin-top: 36px;
+}
+
+.content-header {
+  margin-bottom: 24px;
+  max-width: 720px;
+}
+
+.content-header h2 {
+  margin: 10px 0 12px;
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+}
+
+.content-header p {
+  color: var(--muted);
+}
+
+.content-grid,
+.policy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.content-card,
+.policy-card {
+  padding: 20px;
+  border-radius: 18px;
+  background: #fff;
+  border: 1px solid var(--border);
+}
+
+.content-card h3,
+.policy-card h3 {
+  margin: 0 0 10px;
+}
+
+.content-card ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.content-card table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.content-card th,
+.content-card td {
+  text-align: left;
+  padding: 8px 6px;
+  border-bottom: 1px solid var(--border);
+}
+
+.note {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.link {
+  display: inline-flex;
+  margin-top: 10px;
+  color: var(--accent-deep);
+  font-weight: 600;
+}
+
 .calculator-panel {
   display: grid;
   gap: 20px;
@@ -299,6 +385,10 @@
   .calculator {
     grid-template-columns: 1fr;
   }
+
+  .nav {
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 640px) {
@@ -309,6 +399,10 @@
   .site-header {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .nav {
+    width: 100%;
   }
 
   .hero h1 {
