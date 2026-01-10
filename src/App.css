@@ -235,6 +235,10 @@
   margin: 0 0 10px;
 }
 
+.policy-card p {
+  color: var(--muted);
+}
+
 .content-card ul {
   margin: 0;
   padding-left: 18px;

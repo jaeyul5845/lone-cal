@@ -253,16 +253,16 @@ function App() {
         <section className="policy" id="policy">
           <div className="content-header">
             <p className="eyebrow">정책 안내</p>
-            <h2>투명한 정보 제공을 위한 정책을 공개합니다.</h2>
+            <h2>투명한 정보 제공을 위한 운영 원칙과 정책입니다.</h2>
           </div>
           <div className="policy-grid">
             <article className="policy-card">
               <h3>개인정보처리방침</h3>
               <p>
-                상환메이트는 계산을 위해 입력된 정보를 서버에 저장하지 않습니다.
-                다만 Google AdSense는 쿠키를 사용하여 맞춤 광고를 제공할 수
-                있으며, 사용자는 브라우저 설정에서 쿠키 사용을 제한할 수
-                있습니다.
+                상환메이트는 계산을 위해 입력된 값을 서버에 저장하지 않습니다.
+                모든 계산은 브라우저에서만 처리됩니다. 다만 Google AdSense는
+                쿠키를 사용하여 맞춤 광고를 제공할 수 있으며, 사용자는 브라우저
+                설정에서 쿠키 사용을 제한할 수 있습니다.
               </p>
             </article>
             <article className="policy-card">
@@ -286,6 +286,29 @@ function App() {
               >
                 GitHub 문의 바로가기
               </a>
+            </article>
+            <article className="policy-card">
+              <h3>운영자 정보</h3>
+              <p>
+                본 사이트는 개인 프로젝트로 운영됩니다. 운영자 정보와 연락처는
+                검토 요청 전 정확한 값으로 업데이트해 주세요.
+              </p>
+            </article>
+            <article className="policy-card">
+              <h3>콘텐츠 원칙</h3>
+              <p>
+                중복되거나 의미 없는 콘텐츠를 만들지 않습니다. 핵심 계산 결과와
+                이해에 필요한 정보에 집중해 사용자가 쉽게 탐색할 수 있도록
+                구성합니다.
+              </p>
+            </article>
+            <article className="policy-card">
+              <h3>광고 고지</h3>
+              <p>
+                광고는 콘텐츠를 방해하지 않는 위치에만 배치하며, 콘텐츠보다 더
+                눈에 띄지 않도록 구성합니다. 광고 정책에 맞지 않는 페이지에는
+                광고를 게재하지 않습니다.
+              </p>
             </article>
           </div>
         </section>
