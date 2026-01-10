@@ -2,14 +2,24 @@ import { useMemo, useState } from 'react'
 import './App.css'
 
 function App() {
-  const [amount, setAmount] = useState(42000000)
+  const [amountInput, setAmountInput] = useState('42,000,000')
   const [annualRate, setAnnualRate] = useState(4.1)
   const [months, setMonths] = useState(48)
+
+  const parseNumber = (value: string) =>
+    Number(value.replace(/[^\d.]/g, '')) || 0
+
+  const amount = parseNumber(amountInput)
 
   const formatKrw = (value: number) =>
     new Intl.NumberFormat('ko-KR', {
       style: 'currency',
       currency: 'KRW',
+      maximumFractionDigits: 0,
+    }).format(value)
+
+  const formatNumber = (value: number) =>
+    new Intl.NumberFormat('en-US', {
       maximumFractionDigits: 0,
     }).format(value)
 
@@ -73,11 +83,13 @@ function App() {
               <div className="field-input">
                 <input
                   id="amount"
-                  type="number"
-                  value={amount}
-                  min={0}
-                  step={100000}
-                  onChange={(event) => setAmount(Number(event.target.value))}
+                  type="text"
+                  inputMode="numeric"
+                  value={amountInput}
+                  onChange={(event) => setAmountInput(event.target.value)}
+                  onBlur={(event) =>
+                    setAmountInput(formatNumber(parseNumber(event.target.value)))
+                  }
                 />
                 <span>원</span>
               </div>
@@ -87,7 +99,9 @@ function App() {
                 max={200000000}
                 step={500000}
                 value={amount}
-                onChange={(event) => setAmount(Number(event.target.value))}
+                onChange={(event) =>
+                  setAmountInput(formatNumber(Number(event.target.value)))
+                }
               />
             </div>
             <div className="field">
