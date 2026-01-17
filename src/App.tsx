@@ -1,7 +1,13 @@
-import { useMemo, useState } from 'react'
+import { useMemo, useState, useEffect } from 'react'
 import './App.css'
+import { initGA, logPageView } from './utils/analytics'
 
 function App() {
+  useEffect(() => {
+    initGA()
+    logPageView(window.location.pathname + window.location.search)
+  }, [])
+
   const [amountInput, setAmountInput] = useState('42,000,000')
   const [annualRate, setAnnualRate] = useState(4.1)
   const [months, setMonths] = useState(48)
