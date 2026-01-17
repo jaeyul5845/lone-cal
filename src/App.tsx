@@ -211,6 +211,14 @@ function App() {
               </ul>
             </article>
             <article className="content-card">
+              <h3>상환 계산기 핵심 기능</h3>
+              <ul>
+                <li>대출 금액, 금리, 상환 기간을 즉시 반영합니다.</li>
+                <li>월 상환액, 총 상환액, 총 이자를 한 번에 확인합니다.</li>
+                <li>모바일에서도 빠르게 결과를 확인할 수 있습니다.</li>
+              </ul>
+            </article>
+            <article className="content-card">
               <h3>핵심 체크리스트</h3>
               <ul>
                 <li>대환 가능 여부와 금리 인하 조건을 먼저 확인하세요.</li>
@@ -314,6 +322,46 @@ function App() {
                 광고는 콘텐츠를 방해하지 않는 위치에만 배치하며, 콘텐츠보다 더
                 눈에 띄지 않도록 구성합니다. 광고 정책에 맞지 않는 페이지에는
                 광고를 게재하지 않습니다.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section className="content" id="faq">
+          <div className="content-header">
+            <p className="eyebrow">자주 묻는 질문</p>
+            <h2>대출 상환 계산기 사용 전 많이 확인하는 질문입니다.</h2>
+            <p>
+              빠르게 궁금증을 해결하고 자신에게 맞는 상환 계획을 세워보세요.
+            </p>
+          </div>
+          <div className="content-grid">
+            <article className="content-card">
+              <h3>원리금균등 상환이 무엇인가요?</h3>
+              <p>
+                매달 같은 금액을 갚는 방식으로, 초기에는 이자 비중이 크고
+                시간이 지날수록 원금 비중이 늘어나는 구조입니다.
+              </p>
+            </article>
+            <article className="content-card">
+              <h3>중도상환수수료도 계산되나요?</h3>
+              <p>
+                아니요. 본 계산기는 기본 상환액을 계산하며 중도상환수수료,
+                보증료, 취급수수료는 반영하지 않습니다.
+              </p>
+            </article>
+            <article className="content-card">
+              <h3>입력한 정보가 저장되나요?</h3>
+              <p>
+                저장하지 않습니다. 모든 계산은 브라우저에서만 처리되며 서버로
+                전송되지 않습니다.
+              </p>
+            </article>
+            <article className="content-card">
+              <h3>모바일에서도 정확하게 사용할 수 있나요?</h3>
+              <p>
+                네. 모바일 환경에 맞춰 최적화되어 있어 이동 중에도 결과를
+                빠르게 확인할 수 있습니다.
               </p>
             </article>
           </div>
