@@ -230,6 +230,30 @@
   border: 1px solid var(--border);
 }
 
+.visual-card {
+  padding: 20px;
+  border-radius: 18px;
+  background: #fff;
+  border: 1px solid var(--border);
+  display: grid;
+  gap: 12px;
+  align-content: start;
+}
+
+.visual-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: #f5f7f8;
+}
+
+.visual-card figcaption {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 .content-card h3,
 .policy-card h3 {
   margin: 0 0 10px;

@@ -192,6 +192,35 @@ function App() {
           </div>
         </section>
 
+        <section className="content" id="howto">
+          <div className="content-header">
+            <p className="eyebrow">빠른 사용법</p>
+            <h2>대출 상환 계산기를 1분 안에 끝내는 방법</h2>
+            <p>
+              필요한 값만 넣으면 월 상환액과 총 이자가 바로 계산됩니다. 복잡한
+              절차 없이 핵심 정보만 빠르게 확인하세요.
+            </p>
+          </div>
+          <div className="content-grid">
+            <article className="content-card">
+              <h3>3단계로 끝내기</h3>
+              <ul>
+                <li>대출 금액, 금리, 상환 기간을 입력합니다.</li>
+                <li>원리금균등 기준 월 상환액을 확인합니다.</li>
+                <li>총 상환액과 총 이자를 비교해 계획을 세웁니다.</li>
+              </ul>
+            </article>
+            <figure className="visual-card">
+              <img
+                src="/usage-visual.svg"
+                alt="대출 상환 계산기 사용 흐름 요약"
+                loading="lazy"
+              />
+              <figcaption>입력 → 계산 → 결과 비교 순서로 빠르게 확인하세요.</figcaption>
+            </figure>
+          </div>
+        </section>
+
         <section className="content" id="guide">
           <div className="content-header">
             <p className="eyebrow">상환 가이드</p>
