@@ -80,7 +80,8 @@ function App() {
           </h1>
           <p className="hero-description">
             대출 금액, 금리, 상환 기간을 입력하면 월 상환액, 총 상환액, 총 이자를
-            바로 확인할 수 있습니다. 숫자를 바꾸면 즉시 업데이트됩니다.
+            바로 확인할 수 있습니다. 한국(서울 포함) 이용자를 위한 원화 기준
+            계산기로, 숫자를 바꾸면 즉시 업데이트됩니다.
           </p>
           <div className="hero-badges">
             <span>실시간 계산</span>
@@ -237,6 +238,14 @@ function App() {
                 <li>원리금균등 상환을 기준으로 월 상환액을 계산합니다.</li>
                 <li>중도상환수수료, 보증료, 취급수수료는 반영하지 않습니다.</li>
                 <li>금리는 연이율 기준이며 매월 동일한 비율로 적용됩니다.</li>
+              </ul>
+            </article>
+            <article className="content-card">
+              <h3>국내 기준 안내</h3>
+              <ul>
+                <li>원화(KRW) 기준으로 결과를 표시합니다.</li>
+                <li>대한민국 금융기관의 안내와 실제 조건을 함께 확인하세요.</li>
+                <li>지역·상품별 금리와 수수료는 달라질 수 있습니다.</li>
               </ul>
             </article>
             <article className="content-card">
