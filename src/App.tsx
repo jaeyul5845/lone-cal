@@ -75,12 +75,12 @@ function App() {
         <section className="hero">
           <p className="eyebrow">원페이지 상환 계산</p>
           <h1>
-            대출 조건을 넣으면
-            <span>월 상환액이 즉시 계산됩니다.</span>
+            대출 상환 계산기, 상환메이트
+            <span>원리금균등 기준 월 상환액과 총 이자를 즉시 계산하세요.</span>
           </h1>
           <p className="hero-description">
-            원리금균등 방식 기준으로 총 상환액과 총 이자를 함께 확인하세요.
-            숫자를 바꾸면 바로 업데이트됩니다.
+            대출 금액, 금리, 상환 기간을 입력하면 월 상환액, 총 상환액, 총 이자를
+            바로 확인할 수 있습니다. 숫자를 바꾸면 즉시 업데이트됩니다.
           </p>
           <div className="hero-badges">
             <span>실시간 계산</span>
